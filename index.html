@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown French Institute | DELF Registration</title>
+    <link rel="icon" type="image/jpeg" href="src/logo_icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="header">
+            <img class="logo" src="src/logo_icon.jpg" alt="Crown French Institute logo">
+            <div>
+                <p class="small-title">CROWN FRENCH INSTITUTE</p>
+                <h1>Start your French journey</h1>
+                <p class="intro">Register for focused group preparation for the DELF A1, A2, B1 or B2 examination.</p>
+            </div>
+        </header>
+
+        <section class="programme-info" aria-labelledby="programme-title">
+            <div class="programme-heading">
+                <p class="section-kicker">YOUR NEXT STEP IN FRENCH</p>
+                <h2 id="programme-title">Programme details</h2>
+                <p class="programme-lede">Build your confidence and get ready for your DELF exam with focused guidance from Crown French Institute.</p>
+            </div>
+            <div class="details-grid">
+                <article class="detail-card">
+                    <span class="detail-tag">THE PROGRAMME</span>
+                    <h3>DELF intensive group classes</h3>
+                    <p class="detail-date">October 5 to December 5, 2026</p>
+                    <p>Prepare for your chosen DELF level: A1, A2, B1 or B2. Learn alongside other candidates working towards their DELF examinations.</p>
+                </article>
+                <article class="detail-card orientation-card">
+                    <span class="detail-tag">START HERE</span>
+                    <h3>Online orientation</h3>
+                    <p class="detail-date">Planned for September 30, 2026</p>
+                    <p>Discover how the DELF exam works, why preparation matters, and what to expect from the intensive programme. Joining details will be shared with participants.</p>
+                </article>
+            </div>
+            <div class="programme-bottom">
+                <p class="after-registration">Register below to receive programme information by email and a link to our WhatsApp chat.</p>
+                <nav class="social-links" aria-label="Follow Crown French Institute">
+                    <span>Follow us</span>
+                    <a class="social-link tiktok-link" href="https://tiktok.com/@crownfrenchinstitute" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
+                    <a class="social-link instagram-link" href="https://www.instagram.com/crownfrenchinstitute?stkn=MXc1NXg2Y2MzeWE0Nw==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="flyer-side">
+                <img class="flyer" src="src/flyer.jpg" alt="Crown French Institute DELF programme flyer">
+                <p>Learn French with guidance from our institute.</p>
+            </div>
+
+            <section class="form-card" aria-labelledby="form-title">
+                <h2 id="form-title">Candidate registration</h2>
+                <p class="form-note">Enter your details to register for the DELF programme.</p>
+
+                <form id="registrationForm">
+                    <label for="fullName">Full name</label>
+                    <input id="fullName" name="fullName" type="text" placeholder="Your full name" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                    <label for="phone">WhatsApp number</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+234 800 000 0000" required>
+
+                    <label for="level">DELF level</label>
+                    <select id="level" name="level" required>
+                        <option value="" disabled selected>Choose a level</option>
+                        <option>DELF A1</option>
+                        <option>DELF A2</option>
+                        <option>DELF B1</option>
+                        <option>DELF B2</option>
+                    </select>
+
+                    <button id="submitButton" type="submit">Send registration</button>
+                </form>
+
+                <p id="message" class="message" aria-live="polite"></p>
+                <div id="successMessage" class="success-message" hidden>
+                    <h3>Thank you for registering!</h3>
+                    <p>Your form has been received. A confirmation email with the programme details is being sent. We will open WhatsApp in a few seconds.</p>
+                    <a id="classLink" class="class-link" href="https://wa.me/2348130047732">Continue to WhatsApp now</a>
+                </div>
+            </section>
+        </section>
+
+        <footer>Copyright 2026 Crown French Institute</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
